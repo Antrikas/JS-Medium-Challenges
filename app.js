@@ -9,15 +9,28 @@
 
 ///console.log(progressiveSum([4]));
 
-function calTime(seconds) {
-    let timerMinutes = Math.floor (seconds /60);
-    let timerSeconds = seconds % 60;
+//function calTime(seconds) {
+    //let timerMinutes = Math.floor (seconds /60);
+    //let timerSeconds = seconds % 60;
 
-   if (timerMinutes.toString().length === 1) {
-    timerMinutes = '0' +timerMinutes
-    }
+   //if (timerMinutes.toString().length === 1) {
+   // timerMinutes = '0' +timerMinutes
+    //}
 
-    return timerMinutes + ':' + timerSeconds;
+    //return timerMinutes + ':' + timerSeconds;
+//}
+
+//console.log(calTime([500]));
+
+function getMax(arr) {
+let max = arr[0];
+for (let i = 0; i < arr.length; ++i) {
+if (arr[i] >  max) {
+    max =arr[i];
 }
+}
+return max;
+}
+    
 
-console.log(calTime([500]));
+console.log(getMax([-100], -200, -300));
