@@ -22,15 +22,28 @@
 
 //console.log(calTime([500]));
 
-function getMax(arr) {
-let max = arr[0];
-for (let i = 0; i < arr.length; ++i) {
-if (arr[i] >  max) {
-    max =arr[i];
-}
-}
-return max;
-}
+//function getMax(arr) {
+//let max = arr[0];
+//for (let i = 0; i < arr.length; ++i) {
+//if (arr[i] >  max) {
+ //   max =arr[i];
+//}
+//}
+//return max;
+//}
     
 
-console.log(getMax([-100], -200, -300));
+//console.log(getMax([-100], -200, -300));
+
+function getMax(arr) {
+    let max = arr[0];
+    for (let i = 0; i < arr.length; ++i) {
+    if (arr[i] >  max) {
+        max =arr[i];
+    }
+    }
+    return max;
+    }
+        
+    
+    console.log(getMax([-100], -200, -300));
