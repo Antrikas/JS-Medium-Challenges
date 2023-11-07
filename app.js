@@ -35,15 +35,14 @@
 
 //console.log(getMax([-100], -200, -300));
 
-function getMax(arr) {
-    let max = arr[0];
-    for (let i = 0; i < arr.length; ++i) {
-    if (arr[i] >  max) {
-        max =arr[i];
+function reverseString(str) {
+    let reversedString = '';
+    for (let i = 0; i < str.length; ++i) {
+      // This is how yo loop through every character in a string
+        reversedString = str[i] + reversedString;
     }
-    }
-    return max;
-    }
+    return reversedString;
+}
         
     
-    console.log(getMax([-100], -200, -300));
+    console.log(reverseString('abc'));
