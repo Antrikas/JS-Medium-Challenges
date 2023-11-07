@@ -66,5 +66,23 @@
     function convertToZeros(arr) {
       return arr.map(elem => 0)
     }
-        console.log(convertToZeros([5, 100, 0]));
-
+       console.log(convertToZeros([5, 100, 0]));
+    
+       //New challenge
+        //function removeApples(arr) {
+          //  let noApples = []
+            //for (let i = 0; i < arr.length; ++i) {
+              //  if (arr[i] !== 'Apple') {
+                //    noApples.push (arr[i]);
+                //}
+            //}
+             //   return noApples;
+          //}
+            //  console.log(removeApples(['Banana', 'Apple', 'Orange', 'Apple']));
+      
+              //Solution 2
+              function removeApples(arr) {
+                return arr.filter (elem => elem !== 'Apple')
+              }
+                  console.log(removeApples(['Banana', 'Apple', 'Orange', 'Apple']));
+            
