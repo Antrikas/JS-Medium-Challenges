@@ -38,7 +38,7 @@
 //function reverseString(str) {
    // let reversedString = '';
     //for (let i = 0; i < str.length; ++i) {
-      // This is how yo loop through every character in a string
+      // This is how you loop through every character in a string
       //  reversedString = str[i] + reversedString;
    // }
     //return reversedString;
@@ -47,9 +47,24 @@
     
     //console.log(reverseString('abc'));
 
-    function reverseString(str) {
-        return str.split('').reverse().join('');
+    //Solution 1
+    function convertToZeros(arr) {
+        for (let i = 0; i < arr.length; ++i) {
+           arr[i] = 0
     }
-            
-        
-        console.log(reverseString('abc'));
+    return arr;    
+    }
+        console.log(convertToZeros([5, 100, 0]));
+
+     // Sotution 2   
+        function convertToZeros(arr) {
+            return new Array(arr.length).fill (0);
+        }
+            console.log(convertToZeros([5, 100, 0]));
+
+    //Solution 3
+    function convertToZeros(arr) {
+      return arr.map(elem => 0)
+    }
+        console.log(convertToZeros([5, 100, 0]));
+
