@@ -48,25 +48,25 @@
     //console.log(reverseString('abc'));
 
     //Solution 1
-    function convertToZeros(arr) {
-        for (let i = 0; i < arr.length; ++i) {
-           arr[i] = 0
-    }
-    return arr;    
-    }
-        console.log(convertToZeros([5, 100, 0]));
+    //function convertToZeros(arr) {
+      //  for (let i = 0; i < arr.length; ++i) {
+        //   arr[i] = 0
+    //}
+    //return arr;    
+   // }
+     //   console.log(convertToZeros([5, 100, 0]));
 
      // Sotution 2   
-        function convertToZeros(arr) {
-            return new Array(arr.length).fill (0);
-        }
-            console.log(convertToZeros([5, 100, 0]));
+       // function convertToZeros(arr) {
+         //   return new Array(arr.length).fill (0);
+        //}
+          //  console.log(convertToZeros([5, 100, 0]));
 
     //Solution 3
-    function convertToZeros(arr) {
-      return arr.map(elem => 0)
-    }
-       console.log(convertToZeros([5, 100, 0]));
+    //function convertToZeros(arr) {
+      //return arr.map(elem => 0)
+    //}
+      // console.log(convertToZeros([5, 100, 0]));
     
        //New challenge
         //function removeApples(arr) {
@@ -81,8 +81,35 @@
             //  console.log(removeApples(['Banana', 'Apple', 'Orange', 'Apple']));
       
               //Solution 2
-              function removeApples(arr) {
-                return arr.filter (elem => elem !== 'Apple')
-              }
-                  console.log(removeApples(['Banana', 'Apple', 'Orange', 'Apple']));
+              //function removeApples(arr) {
+                //return arr.filter (elem => elem !== 'Apple')
+              //}
+                //  console.log(removeApples(['Banana', 'Apple', 'Orange', 'Apple']));
             
+
+            // New Challenge
+
+            //function filterOutFalsy(arr) {
+              //  return arr.filter (elem => elem === false)
+             // }
+               //   console.log(filterOutFalsy(["", [], 0, null, undefined, "0"]));
+            
+//Solution 2
+
+//function removfilterOutFalsyeApples(arr) {
+  //  let noFalsy = [];
+    //  for (let i = 0; i < arr.length; ++i) {
+      //  if (arr[i] !== 'Falsy') {
+        //  noFalsy.push (arr[i]);
+          //}
+      //}
+        //  return noFalsy;
+    //}
+      //  console.log(filterOutFalsy(["", [], 0, null, undefined, "0" ]));
+
+
+        //New Challenge
+        function convertToBoolean(arr) {
+        return arr.map(elem => !!elem)
+        }
+                console.log(convertToBoolean(['', 500, 0, 'Andreas', ]));
