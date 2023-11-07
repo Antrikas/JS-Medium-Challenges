@@ -35,14 +35,21 @@
 
 //console.log(getMax([-100], -200, -300));
 
-function reverseString(str) {
-    let reversedString = '';
-    for (let i = 0; i < str.length; ++i) {
+//function reverseString(str) {
+   // let reversedString = '';
+    //for (let i = 0; i < str.length; ++i) {
       // This is how yo loop through every character in a string
-        reversedString = str[i] + reversedString;
-    }
-    return reversedString;
-}
+      //  reversedString = str[i] + reversedString;
+   // }
+    //return reversedString;
+//}
         
     
-    console.log(reverseString('abc'));
+    //console.log(reverseString('abc'));
+
+    function reverseString(str) {
+        return str.split('').reverse().join('');
+    }
+            
+        
+        console.log(reverseString('abc'));
